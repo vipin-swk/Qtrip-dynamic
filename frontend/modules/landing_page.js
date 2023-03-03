@@ -15,10 +15,10 @@ async function fetchCities() {
   // TODO: MODULE_CITIES
   // 1. Fetch cities using the Backend API and return the data
   try{
-const response = await fetch(`http://3.110.5.223:8082/cities`);
+const response = await fetch(config.backendEndpoint+"/cities");
 const json= await response.json();
 return json;}
-catch{
+catch(e){
   return null;
 }
 }
