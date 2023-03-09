@@ -70,7 +70,6 @@ function filterByDuration(list, low, high) {
     (elem) => {
       return  elem.duration >= low && elem.duration <= high}
   );
-  console.log(filteredList);
   return filteredList;
 }
 
@@ -110,7 +109,6 @@ function filterFunction(list, filters) {
   } else if (filters.duration.length>0) {
     let arr = filters.duration.split("-");
     let [low, high] = arr;
-    console.log(low, high);
     newList = filterByDuration(list, parseInt(low), parseInt(high));
     
   } else {
