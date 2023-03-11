@@ -6,7 +6,7 @@ function getAdventureIdFromURL(search) {
   // 1. Get the Adventure Id from the URL
 const url = new URLSearchParams(search);
 const adventure = url.get("adventure")
-console.log(adventure);
+// console.log(adventure);
   // Place holder for functionality to work in the Stubs
   return adventure;
 }
@@ -17,7 +17,7 @@ async function fetchAdventureDetails(adventureId) {
   try{
 const response = await fetch(config.backendEndpoint+`/adventures/detail?adventure=${adventureId}`)
 const json = await response.json();
-console.log(json);
+// console.log(json);
 return json;
   }
   catch(e){
