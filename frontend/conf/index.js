@@ -1,4 +1,4 @@
 
-const config = { backendEndpoint: "http://35.154.46.27:8082" };
+const config = { backendEndpoint: "http://13.232.157.73:8082" };
 
 export default config;
