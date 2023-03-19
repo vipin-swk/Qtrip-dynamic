@@ -48,7 +48,7 @@ const tableRow = document.createElement("tr");
     let year = time.getFullYear();
     let bookTime = time.toLocaleString("en-IN").split(" ");
 tableRow.innerHTML=`
-<td>${reservation.id}</td>
+<th scope="row">${reservation.id}</th>
 <td>${reservation.name}</td>
 <td>${reservation.adventureName}</td>
 <td>${reservation.person}</td>
